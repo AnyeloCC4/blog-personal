@@ -1,0 +1,61 @@
+@import "./components/globales";
+@import "./components//header";
+
+.main {
+  &__banner {
+    width: 80%;
+    height: 350px;
+    margin: 30px auto;
+  }
+  &__banner--img {
+    background-image: url("../assets//images/blog1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    filter: brightness(0.5);
+    border: 5px solid $color-claro;
+    border-radius: 20px;
+    position: absolute;
+  }
+  &__banner--description {
+    position: relative;
+    height: inherit;
+  }
+  &__banner--description h2 {
+    color: $color-claro;
+    display: flex;
+    height: inherit;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 30px;
+  }
+  &__blogs {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template: repeat(1, minmax(350px, 450px)) / repeat(
+        3,
+        minmax(250px, 400px)
+      );
+    gap: 20px;
+    grid-auto-rows: minmax(300px, 400px);
+  }
+  &__blogs--container {
+    background: $background-blog;
+    border-radius: 20px;
+    padding: 20px;
+    color: $color-oscuro;
+  }
+  &__blogs--container img {
+    height: 60%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  &__blogs--container h2 {
+    margin-top: 20px;
+  }
+}
+@import "./components/footer.scss";
