@@ -1,0 +1,29 @@
+.footer {
+  height: 200px;
+  width: 80%;
+  margin: 30px auto;
+  &__social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-claro;
+    font-size: 2rem;
+  }
+  a img {
+    width: 70px;
+    padding-right: 20px;
+  }
+  &__end {
+    color: $color-claro;
+    text-align: center;
+  }
+  p {
+    font-size: 2rem;
+  }
+}

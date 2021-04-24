@@ -1,0 +1,38 @@
+@import "./components/globales";
+@import "./components/header";
+
+.main {
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: $color-claro;
+    letter-spacing: 10px;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 10px solid rgba($color: $color-claro, $alpha: 0.7);
+  }
+  &__description {
+    width: 80%;
+    margin: 30px auto;
+    color: $color-claro;
+  }
+  h2 {
+    display: inline-block;
+    border-bottom: 2px solid $color-claro;
+    margin: 20px 0px;
+  }
+  &__portfolio {
+    height: 800px;
+    text-align: center;
+    color: $color-claro;
+  }
+}
+
+@import "./components/footer.scss";

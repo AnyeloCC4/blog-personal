@@ -1,51 +1,3 @@
-$color-claro: #d8e9f9;
-$color-oscuro: #0d0c12;
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 62.5%;
-  background: rgb(94, 55, 124);
-  background: linear-gradient(
-    0deg,
-    rgba(94, 55, 124, 1) 25%,
-    rgba(85, 57, 106, 1) 60%,
-    rgba(20, 5, 35, 1) 100%
-  );
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2.5rem;
-}
-h3 {
-  font-size: 2rem;
-}
-p {
-  font-size: 1.6rem;
-}
-a {
-  text-decoration: none;
-}
-.header {
-  height: 50px;
-  &__nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: inherit;
-  }
-  a {
-    color: $color-claro;
-    font-size: 2rem;
-  }
-}
-
 .main {
   &__banner {
     height: 350px;
@@ -104,35 +56,5 @@ a {
   }
   h2 {
     margin-top: 20px;
-  }
-}
-
-.footer {
-  height: 200px;
-  width: 80%;
-  margin: 30px auto;
-  &__social {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50%;
-  }
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $color-claro;
-    font-size: 2rem;
-  }
-  a img {
-    width: 70px;
-    padding-right: 20px;
-  }
-  &__end {
-    color: $color-claro;
-    text-align: center;
-  }
-  p {
-    font-size: 2rem;
   }
 }
