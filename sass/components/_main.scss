@@ -1,60 +1,58 @@
 .main {
   &__banner {
     height: 350px;
+    width: 100%;
   }
   &__banner--img {
-    height: inherit;
-    width: 100%;
-    background-image: url("../assets/images/banner.jpeg");
+    background-image: url("/assets/images/banner.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+    filter: brightness(0.5);
     position: absolute;
   }
   &__banner--name {
     color: $color-claro;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    letter-spacing: 10px;
-    position: relative;
     height: inherit;
-    padding: 20px;
+    width: inherit;
   }
   &__title {
-    margin: 10px auto 10px auto;
-    padding: 10px;
-    width: 80%;
-    border-bottom: 2px solid $color-claro;
-    text-align: center;
+    margin: 20px auto;
+    width: 90%;
     color: $color-claro;
+    text-align: center;
+    border-bottom: 2px solid $color-claro;
   }
   &__blog {
-    display: grid;
-    grid-template: repeat(1, minmax(350px, 450px)) / repeat(
-        3,
-        minmax(250px, 400px)
-      );
-    justify-content: space-evenly;
-    gap: 30px;
-    margin: 30px auto 30px auto;
     width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template: repeat(3, minmax(250px, 350px)) / repeat(
+        1,
+        minmax(280px, 400px)
+      );
+    gap: 20px;
+    justify-content: center;
+    grid-auto-rows: minmax(250px, 350px);
   }
   &__blog--container {
     background: $background-blog;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
     color: $color-oscuro;
+    padding: 10px;
+    border-radius: 20px;
   }
-  img {
+  &__blog--container img {
+    width: 100%;
+    max-height: 60%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-  }
-  h2 {
-    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }

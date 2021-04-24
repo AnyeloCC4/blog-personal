@@ -12,19 +12,19 @@ html {
 }
 
 h1 {
-  font-size: 3rem;
-}
-
-h2 {
   font-size: 2.5rem;
 }
 
-h3 {
+h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-size: 1.8rem;
+}
+
 p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 a {
@@ -47,64 +47,60 @@ a {
 
 .main__banner {
   height: 350px;
+  width: 100%;
 }
 .main__banner--img {
-  height: inherit;
-  width: 100%;
-  background-image: url("../assets/images/banner.jpeg");
+  background-image: url("/assets/images/banner.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.7;
+  height: inherit;
+  width: inherit;
+  filter: brightness(0.5);
   position: absolute;
 }
 .main__banner--name {
   color: #d8e9f9;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  letter-spacing: 10px;
-  position: relative;
   height: inherit;
-  padding: 20px;
+  width: inherit;
 }
 .main__title {
-  margin: 10px auto 10px auto;
-  padding: 10px;
-  width: 80%;
-  border-bottom: 2px solid #d8e9f9;
-  text-align: center;
+  margin: 20px auto;
+  width: 90%;
   color: #d8e9f9;
+  text-align: center;
+  border-bottom: 2px solid #d8e9f9;
 }
 .main__blog {
-  display: grid;
-  grid-template: repeat(1, minmax(350px, 450px))/repeat(3, minmax(250px, 400px));
-  justify-content: space-evenly;
-  gap: 30px;
-  margin: 30px auto 30px auto;
   width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template: repeat(3, minmax(250px, 350px))/repeat(1, minmax(280px, 400px));
+  gap: 20px;
+  justify-content: center;
+  grid-auto-rows: minmax(250px, 350px);
 }
 .main__blog--container {
   background: #b6d5fc;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
   color: #0d0c12;
+  padding: 10px;
+  border-radius: 20px;
 }
-.main img {
+.main__blog--container img {
+  width: 100%;
+  max-height: 60%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-}
-.main h2 {
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .footer {
-  height: 200px;
-  width: 80%;
-  margin: 30px auto;
+  width: 100%;
 }
 .footer__social {
   display: flex;
@@ -114,21 +110,20 @@ a {
 }
 .footer a {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #d8e9f9;
   font-size: 2rem;
 }
 .footer a img {
-  width: 70px;
-  padding-right: 20px;
+  width: 50px;
+  margin-bottom: 10px;
 }
 .footer__end {
   color: #d8e9f9;
+  margin: 20px 0;
   text-align: center;
-}
-.footer p {
-  font-size: 2rem;
 }
 
 /*# sourceMappingURL=home.css.map */

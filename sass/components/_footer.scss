@@ -1,7 +1,5 @@
 .footer {
-  height: 200px;
-  width: 80%;
-  margin: 30px auto;
+  width: 100%;
   &__social {
     display: flex;
     justify-content: space-evenly;
@@ -10,20 +8,19 @@
   }
   a {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $color-claro;
     font-size: 2rem;
   }
   a img {
-    width: 70px;
-    padding-right: 20px;
+    width: 50px;
+    margin-bottom: 10px;
   }
   &__end {
     color: $color-claro;
+    margin: 20px 0;
     text-align: center;
-  }
-  p {
-    font-size: 2rem;
   }
 }

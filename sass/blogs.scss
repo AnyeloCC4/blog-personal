@@ -3,59 +3,54 @@
 
 .main {
   &__banner {
-    width: 80%;
-    height: 350px;
-    margin: 30px auto;
+    height: 300px;
+    width: 100%;
   }
   &__banner--img {
-    background-image: url("../assets//images/blog1.jpeg");
+    background-image: url("/assets/images/blog1.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: inherit;
     width: inherit;
     filter: brightness(0.5);
-    border: 5px solid $color-claro;
-    border-radius: 20px;
     position: absolute;
   }
   &__banner--description {
-    position: relative;
     height: inherit;
-  }
-  &__banner--description h2 {
-    color: $color-claro;
+    width: inherit;
     display: flex;
-    height: inherit;
     justify-content: end;
     align-items: flex-end;
-    padding: 30px;
+    position: relative;
+    color: $color-claro;
+    text-align: end;
+    padding: 20px;
   }
   &__blogs {
     width: 90%;
-    margin: 30px auto;
+    margin: 20px auto;
     display: grid;
-    grid-template: repeat(1, minmax(350px, 450px)) / repeat(
-        3,
-        minmax(250px, 400px)
+    grid-template: repeat(3, minmax(250px, 350px)) / repeat(
+        1,
+        minmax(280px, 400px)
       );
     gap: 20px;
-    grid-auto-rows: minmax(300px, 400px);
+    justify-content: center;
+    grid-auto-rows: minmax(250px, 350px);
   }
   &__blogs--container {
     background: $background-blog;
-    border-radius: 20px;
-    padding: 20px;
     color: $color-oscuro;
+    padding: 10px;
+    border-radius: 20px;
   }
   &__blogs--container img {
-    height: 60%;
     width: 100%;
-    border-top-right-radius: 20px;
+    max-height: 60%;
     border-top-left-radius: 20px;
-  }
-  &__blogs--container h2 {
-    margin-top: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 10px;
   }
 }
 @import "./components/footer.scss";
