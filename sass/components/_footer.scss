@@ -6,7 +6,7 @@
     align-items: center;
     height: 50%;
   }
-  a {
+  &__social a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +14,7 @@
     color: $color-claro;
     font-size: 2rem;
   }
-  a img {
+  &__social a img {
     width: 50px;
     margin-bottom: 10px;
   }

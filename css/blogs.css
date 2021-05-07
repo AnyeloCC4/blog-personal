@@ -102,7 +102,7 @@ a {
   align-items: center;
   height: 50%;
 }
-.footer a {
+.footer__social a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +110,7 @@ a {
   color: #d8e9f9;
   font-size: 2rem;
 }
-.footer a img {
+.footer__social a img {
   width: 50px;
   margin-bottom: 10px;
 }
