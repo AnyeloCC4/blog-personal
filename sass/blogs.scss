@@ -31,13 +31,13 @@
     width: 90%;
     margin: 20px auto;
     display: grid;
-    grid-template: repeat(3, minmax(250px, 350px)) / repeat(
+    grid-template: repeat(3, minmax(380px, 400px)) / repeat(
         1,
-        minmax(280px, 400px)
+        minmax(280px, 480px)
       );
     gap: 20px;
     justify-content: center;
-    grid-auto-rows: minmax(250px, 350px);
+    grid-auto-rows: minmax(380px, 400px);
   }
   &__blogs--container {
     background: $background-blog;

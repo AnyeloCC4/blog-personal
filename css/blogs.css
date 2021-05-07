@@ -12,19 +12,19 @@ html {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 a {
@@ -74,10 +74,10 @@ a {
   width: 90%;
   margin: 20px auto;
   display: grid;
-  grid-template: repeat(3, minmax(250px, 350px))/repeat(1, minmax(280px, 400px));
+  grid-template: repeat(3, minmax(380px, 400px))/repeat(1, minmax(280px, 480px));
   gap: 20px;
   justify-content: center;
-  grid-auto-rows: minmax(250px, 350px);
+  grid-auto-rows: minmax(380px, 400px);
 }
 .main__blogs--container {
   background: #b6d5fc;
