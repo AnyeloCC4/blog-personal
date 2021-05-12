@@ -23,6 +23,10 @@
     height: inherit;
     width: inherit;
   }
+  &__banner--name a {
+    color: $color-claro;
+    text-decoration: underline;
+  }
   &__title {
     margin: 20px auto;
     width: 90%;

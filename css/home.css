@@ -69,6 +69,10 @@ a {
   height: inherit;
   width: inherit;
 }
+.main__banner--name a {
+  color: #d8e9f9;
+  text-decoration: underline;
+}
 .main__title {
   margin: 20px auto;
   width: 90%;
