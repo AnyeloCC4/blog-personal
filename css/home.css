@@ -48,26 +48,25 @@ a {
 .main__banner {
   height: 350px;
   width: 100%;
-}
-.main__banner--img {
-  background-image: url("/assets/images/banner.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: inherit;
-  width: inherit;
-  filter: brightness(0.5);
-  position: absolute;
-}
-.main__banner--name {
-  color: #d8e9f9;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: inherit;
-  width: inherit;
+  border-bottom: 2px solid #d8e9f9;
+}
+.main__banner--img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #d8e9f9;
+}
+.main__banner--name {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d8e9f9;
 }
 .main__banner--name a {
   color: #d8e9f9;

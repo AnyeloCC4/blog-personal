@@ -2,26 +2,25 @@
   &__banner {
     height: 350px;
     width: 100%;
-  }
-  &__banner--img {
-    background-image: url("/assets/images/banner.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: inherit;
-    width: inherit;
-    filter: brightness(0.5);
-    position: absolute;
-  }
-  &__banner--name {
-    color: $color-claro;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: inherit;
-    width: inherit;
+    border-bottom: 2px solid $color-claro;
+  }
+  &__banner--img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid $color-claro;
+  }
+  &__banner--name {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-claro;
   }
   &__banner--name a {
     color: $color-claro;
